@@ -1,0 +1,7 @@
+//
+// Prefix header for all source files of the 'betabuilder' target in the 'betabuilder' project
+//
+
+#ifdef __OBJC__
+    #import <Foundation/Foundation.h>
+#endif

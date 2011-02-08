@@ -21,11 +21,30 @@
 		5AA4E409120DE84F00385530 /* index_template.html in Resources */ = {isa = PBXBuildFile; fileRef = 5AA4E408120DE84F00385530 /* index_template.html */; };
 		5AA4E491120DF21D00385530 /* README in Resources */ = {isa = PBXBuildFile; fileRef = 5AA4E490120DF21D00385530 /* README */; };
 		5AB3C6151224870100778CFC /* Credits.html in Resources */ = {isa = PBXBuildFile; fileRef = 5AB3C6141224870100778CFC /* Credits.html */; };
-		5ACEC915125FD37F009864D8 /* betabuilder.icns in Resources */ = {isa = PBXBuildFile; fileRef = 5ACEC914125FD37F009864D8 /* betabuilder.icns */; };
 		8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C165CFE840E0CC02AAC07 /* InfoPlist.strings */; };
 		8D11072D0486CEB800E47090 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; settings = {ATTRIBUTES = (); }; };
 		8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
+		D2FCB4E61300C7FA00F6B5F6 /* CommandLineMain.m in Sources */ = {isa = PBXBuildFile; fileRef = D2FCB4E51300C7FA00F6B5F6 /* CommandLineMain.m */; };
+		D2FCB4E71300C83100F6B5F6 /* ZipArchive.mm in Sources */ = {isa = PBXBuildFile; fileRef = 5A2343491211AB1F0098AAB8 /* ZipArchive.mm */; };
+		D2FCB4E81300C83E00F6B5F6 /* ioapi.c in Sources */ = {isa = PBXBuildFile; fileRef = 5A2343401211AB1F0098AAB8 /* ioapi.c */; };
+		D2FCB4E91300C83E00F6B5F6 /* mztools.c in Sources */ = {isa = PBXBuildFile; fileRef = 5A2343421211AB1F0098AAB8 /* mztools.c */; };
+		D2FCB4EA1300C83E00F6B5F6 /* unzip.c in Sources */ = {isa = PBXBuildFile; fileRef = 5A2343441211AB1F0098AAB8 /* unzip.c */; };
+		D2FCB4EB1300C83E00F6B5F6 /* zip.c in Sources */ = {isa = PBXBuildFile; fileRef = 5A2343461211AB1F0098AAB8 /* zip.c */; };
+		D2FCB4EC1300CA3500F6B5F6 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
+		D2FCB4ED1300CA3A00F6B5F6 /* libz.1.2.3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A23435B1211ABD40098AAB8 /* libz.1.2.3.dylib */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		D2FCB4D61300C7C000F6B5F6 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		089C165DFE840E0CC02AAC07 /* English */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/InfoPlist.strings; sourceTree = "<group>"; };
@@ -58,9 +77,11 @@
 		5AA4E408120DE84F00385530 /* index_template.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = index_template.html; sourceTree = "<group>"; };
 		5AA4E490120DF21D00385530 /* README */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README; sourceTree = "<group>"; };
 		5AB3C6141224870100778CFC /* Credits.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = Credits.html; sourceTree = "<group>"; };
-		5ACEC914125FD37F009864D8 /* betabuilder.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = betabuilder.icns; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* BetaBuilder-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "BetaBuilder-Info.plist"; sourceTree = "<group>"; };
 		8D1107320486CEB800E47090 /* BetaBuilder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BetaBuilder.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D2FCB4D81300C7C000F6B5F6 /* betabuilder */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = betabuilder; sourceTree = BUILT_PRODUCTS_DIR; };
+		D2FCB4E01300C7C000F6B5F6 /* betabuilder-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "betabuilder-Prefix.pch"; sourceTree = "<group>"; };
+		D2FCB4E51300C7FA00F6B5F6 /* CommandLineMain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CommandLineMain.m; path = ../CommandLineMain.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +91,15 @@
 			files = (
 				8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */,
 				5A23435C1211ABD40098AAB8 /* libz.1.2.3.dylib in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D2FCB4D51300C7C000F6B5F6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D2FCB4EC1300CA3500F6B5F6 /* Cocoa.framework in Frameworks */,
+				D2FCB4ED1300CA3A00F6B5F6 /* libz.1.2.3.dylib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -112,6 +142,7 @@
 			isa = PBXGroup;
 			children = (
 				8D1107320486CEB800E47090 /* BetaBuilder.app */,
+				D2FCB4D81300C7C000F6B5F6 /* betabuilder */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -122,6 +153,7 @@
 				080E96DDFE201D6D7F000001 /* Classes */,
 				29B97315FDCFA39411CA2CEA /* Other Sources */,
 				29B97317FDCFA39411CA2CEA /* Resources */,
+				D2FCB4DC1300C7C000F6B5F6 /* betabuilder */,
 				29B97323FDCFA39411CA2CEA /* Frameworks */,
 				19C28FACFE9D520D11CA2CBB /* Products */,
 			);
@@ -141,7 +173,6 @@
 			isa = PBXGroup;
 			children = (
 				5A6C75B712E4C65C0050AA2B /* HISTORY */,
-				5ACEC914125FD37F009864D8 /* betabuilder.icns */,
 				8D1107310486CEB800E47090 /* BetaBuilder-Info.plist */,
 				089C165CFE840E0CC02AAC07 /* InfoPlist.strings */,
 				1DDD58140DA1D0A300B32029 /* MainMenu.xib */,
@@ -196,6 +227,23 @@
 			name = Categories;
 			sourceTree = "<group>";
 		};
+		D2FCB4DC1300C7C000F6B5F6 /* betabuilder */ = {
+			isa = PBXGroup;
+			children = (
+				D2FCB4E51300C7FA00F6B5F6 /* CommandLineMain.m */,
+				D2FCB4DF1300C7C000F6B5F6 /* Supporting Files */,
+			);
+			path = betabuilder;
+			sourceTree = "<group>";
+		};
+		D2FCB4DF1300C7C000F6B5F6 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D2FCB4E01300C7C000F6B5F6 /* betabuilder-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -217,6 +265,23 @@
 			productReference = 8D1107320486CEB800E47090 /* BetaBuilder.app */;
 			productType = "com.apple.product-type.application";
 		};
+		D2FCB4D71300C7C000F6B5F6 /* betabuilder */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D2FCB4E21300C7C000F6B5F6 /* Build configuration list for PBXNativeTarget "betabuilder" */;
+			buildPhases = (
+				D2FCB4D41300C7C000F6B5F6 /* Sources */,
+				D2FCB4D51300C7C000F6B5F6 /* Frameworks */,
+				D2FCB4D61300C7C000F6B5F6 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = betabuilder;
+			productName = betabuilder;
+			productReference = D2FCB4D81300C7C000F6B5F6 /* betabuilder */;
+			productType = "com.apple.product-type.tool";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -237,6 +302,7 @@
 			projectRoot = "";
 			targets = (
 				8D1107260486CEB800E47090 /* BetaBuilder */,
+				D2FCB4D71300C7C000F6B5F6 /* betabuilder */,
 			);
 		};
 /* End PBXProject section */
@@ -251,7 +317,6 @@
 				5AA4E409120DE84F00385530 /* index_template.html in Resources */,
 				5AA4E491120DF21D00385530 /* README in Resources */,
 				5AB3C6151224870100778CFC /* Credits.html in Resources */,
-				5ACEC915125FD37F009864D8 /* betabuilder.icns in Resources */,
 				5A6C75B812E4C65C0050AA2B /* HISTORY in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -272,6 +337,19 @@
 				5A23434D1211AB1F0098AAB8 /* zip.c in Sources */,
 				5A23434E1211AB1F0098AAB8 /* ZipArchive.mm in Sources */,
 				5A8F042612E613040087F51C /* NSFileManager+DirectoryLocations.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D2FCB4D41300C7C000F6B5F6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D2FCB4E61300C7FA00F6B5F6 /* CommandLineMain.m in Sources */,
+				D2FCB4E71300C83100F6B5F6 /* ZipArchive.mm in Sources */,
+				D2FCB4E81300C83E00F6B5F6 /* ioapi.c in Sources */,
+				D2FCB4E91300C83E00F6B5F6 /* mztools.c in Sources */,
+				D2FCB4EA1300C83E00F6B5F6 /* unzip.c in Sources */,
+				D2FCB4EB1300C83E00F6B5F6 /* zip.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -358,6 +436,41 @@
 			};
 			name = Release;
 		};
+		D2FCB4E31300C7C000F6B5F6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "betabuilder/betabuilder-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		D2FCB4E41300C7C000F6B5F6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "betabuilder/betabuilder-Prefix.pch";
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -378,6 +491,14 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		D2FCB4E21300C7C000F6B5F6 /* Build configuration list for PBXNativeTarget "betabuilder" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D2FCB4E31300C7C000F6B5F6 /* Debug */,
+				D2FCB4E41300C7C000F6B5F6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 	};
